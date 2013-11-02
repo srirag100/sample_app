@@ -5,11 +5,7 @@ gem 'rails', '4.0.1'
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
-gem 'sqlite3', :group => [:development, :test]
-group :production do
-  gem 'thin'
-  gem 'pg'
-end
+
 
 
 
@@ -29,6 +25,12 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
 
 
+
+gem 'sqlite3', :group => [:development, :test]
+group :development do
+  gem 'taps'
+  gem 'rvm'
+end
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
