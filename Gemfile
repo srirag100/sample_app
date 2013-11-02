@@ -26,10 +26,11 @@ gem 'jquery-rails'
 
 
 
-gem 'sqlite3', :group => [:development, :test]
-group :development do
-  gem 'taps'
-  gem 'rvm'
+group :development, :test do
+  gem 'sqlite3'
+end
+group :production do
+  gem 'pg'
 end
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
